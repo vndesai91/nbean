@@ -1,10 +1,12 @@
 public class value {
-    public static void main(String[] args) {
-        char ch = 'a';
-        int ascii = ch;
-        // You can also cast char to int
-        int castAscii = (int) ch;
-        System.out.println("The ASCII value of " + ch + " is: " + ascii);
-        System.out.println("The ASCII value of " + ch + " is: " + castAscii);
+  public static void main(String[] args) {
+        int base = 3, exponent = 4;
+        long result = 1;
+        while (exponent != 0)
+        {
+            result *= base;
+            --exponent;
+        }
+        System.out.println("Answer = " + result);
     }
 }
